@@ -1,0 +1,117 @@
+.portfolio {
+  background-color: $light;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 80px 60px;
+
+  .heading-l, .paragraph {
+    color: $dark;
+  }
+
+  .section-title {
+    margin-bottom: 32px;
+  }
+
+  .paragraph {
+    margin-bottom: 8px;
+  }
+
+  .projects-container {
+    margin-top: 80px;
+
+    .project-block {
+      display: flex;
+      // justify-content: space-around;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 60px 0;
+
+      @media all and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .project-img-link {
+        width: 300px;
+        height: 195px;
+        margin-right: 0;
+        transition: all .25s ease-in-out;
+        margin-bottom: 30px;
+        border-radius: 4px;
+
+        @media all and (min-width: 768px) {
+          margin-right: 150px;
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+          -webkit-box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.51);
+          -moz-box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.51);
+          box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.51);
+        }
+
+        img {
+          width: 300px;
+          height: 195px;
+        }
+      }
+
+      .project-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        @media all and (min-width: 768px) {
+          width: 500px;
+        }
+
+        .heading-m {
+          margin-bottom: 28px;
+          color: $dark;
+        }
+
+        .paragraph {
+          margin-bottom: 16px;
+        }
+
+        .project-link {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding: 10px 15px;
+          border: 2px solid $dark;
+          border-radius: 4px;
+          text-decoration: none;
+          color: $beige;
+          background-color: $dark;
+          cursor: pointer;
+          transition: all .2s ease-in-out;
+
+          @media all and (min-width: 768px) {
+            width: 150px;
+          }
+
+          &:hover {
+            color: $dark;
+            border: 2px solid $dark;
+            background-color: $beige;
+            transform: scale(1.02);
+            -webkit-box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.51);
+            -moz-box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.51);
+            box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.51);
+          }
+        }
+      }
+    }
+  }
+}

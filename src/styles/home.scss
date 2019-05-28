@@ -1,0 +1,27 @@
+.home {
+  background-color: $medium;
+}
+
+.home-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 656px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .heading-l {
+    margin-bottom: 32px;
+    color: $beige;
+  }
+
+  .paragraph {
+    margin-bottom: 8px;
+    color: $beige;
+  }
+
+  .loud {
+    color: $loud;
+  }
+}

@@ -1,0 +1,71 @@
+.contact-container {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  @media all and (min-width: 768px) {
+    padding: 100px 60px;  
+  }
+
+  .profile-img {
+    width: 300px;
+    border-radius: 50%;
+    -webkit-box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.51);
+    box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.51);
+    margin: 40px;
+  }
+
+  .heading-l {
+    margin-bottom: 48px;
+  }
+
+  .contact-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+    }
+    
+    .details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px;
+
+      .paragraph {
+        margin-bottom: 16px;
+      }
+      
+      .skills-block {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        
+        @media all and (min-width: 768px) {
+          flex-direction: row;
+          width: 300px;
+        }
+
+        ul {
+          list-style-type: disc;
+          margin-bottom: 16px;
+
+          &:first-of-type {
+            margin-left: 30px;
+          }
+
+          li {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

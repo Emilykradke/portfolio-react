@@ -1,0 +1,30 @@
+$dark: #4F6367;
+$medium: #7A9E9F;
+$light: #B8D8D8;
+$beige: #EEF5DB;
+$loud: #FE5F55;
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
+}
+
+p, li, a {
+  font-size: 16px;
+}
+
+.heading-m {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.heading-l {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 24px;
+}
