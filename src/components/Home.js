@@ -7,9 +7,7 @@ class Home extends Component {
         <div className="home-container">
           <h1 className="heading-l">Hello, I'm <span className="loud">Emily Radke</span>.</h1>
           <h2 className="heading-l">I'm a full-stack web developer.</h2>
-          {/* <p className="paragraph">This is description 1.</p>
-          <p className="paragraph">This is description 2.</p>
-          <p className="paragraph">This is description 3.</p> */}
+          {/* <p className="paragraph">This is description 1.</p> */}
         </div>
       </section>
     );
