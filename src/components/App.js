@@ -12,12 +12,16 @@ class App extends Component {
 
 
     this.state = {
-      menuOpen: null
+      menuOpen: false
     }
   }
 
   toggleMenu = () => {
     this.setState({ menuOpen: !this.state.menuOpen });
+  }
+
+  handleLinkClick() {
+    this.setState({menuOpen: false})
   }
 
   render() {

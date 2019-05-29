@@ -3,11 +3,6 @@ import Scrollspy from 'react-scrollspy';
 
 import Hamburger from './Hamburger';
 
-// const navItems = [{id: 'about', text: 'About'}, 
-//                   {id: 'portfolio', text: 'Portfolio'}, 
-//                   {id: 'contact', text: 'Contact'}];
-
-
 class Nav extends Component {
 
   render() {
@@ -16,11 +11,11 @@ class Nav extends Component {
         <Scrollspy className="nav-list" 
           items={ ['about', 'portfolio', 'contact'] } offset={ -200 }>
           <li>
-              <a href={`#about`}>About</a>
-              <a href={`#portfolio`}>Portfolio</a>
-              <a href={`#contact`}>Contact</a>
-              <a href={`https://www.dropbox.com/s/xr6kiy518oho4jh/Resume.pdf?dl=0`}  target={"_blank"}>Resume</a>
-            </li>
+            <a href={`#about`}>About</a>
+            <a href={`#portfolio`}>Portfolio</a>
+            <a href={`#contact`}>Contact</a>
+            <a href={`https://www.dropbox.com/s/xr6kiy518oho4jh/Resume.pdf?dl=0`}  target={"_blank"}>Resume</a>
+          </li>
         </Scrollspy>
 
         <Hamburger 

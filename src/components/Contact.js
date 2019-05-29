@@ -18,6 +18,7 @@ class Contact extends Component {
                 <ul>
                   <li>HTML</li>
                   <li>CSS/SCSS</li>
+                  <li>JavaScript ES6</li>
                   <li>React.js</li>
                   <li>Node.js</li>
                 </ul>
