@@ -1,0 +1,25 @@
+footer {
+  background-color: $dark;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    color: $beige;
+    font-size: 18px;
+
+    a {
+      margin-left: 5px;
+      color: $loud;
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  .copyright {
+    margin-bottom: 15px;
+  }
+}

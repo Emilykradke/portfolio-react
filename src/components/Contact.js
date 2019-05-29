@@ -18,14 +18,14 @@ class Contact extends Component {
                 <ul>
                   <li>HTML</li>
                   <li>CSS/SCSS</li>
-                  <li>JavaScript ES6</li>
+                  <li>MySQL</li>
                   <li>React.js</li>
                   <li>Node.js</li>
                 </ul>
                 <ul>
                   <li>Express.js</li>
                   <li>MongoDB</li>
-                  <li>MySQL</li>
+                  <li>JavaScript ES6</li>
                   <li>Mongoose</li>
                   <li>Sequelize</li>
                 </ul>
@@ -35,6 +35,15 @@ class Contact extends Component {
                 on performance and easy-to-use UI/UX!
               </p>
             </div>
+          </div>
+
+          <div className="contact-links">
+            <li>
+              <a href={`https://github.com/Emilykradke?tab=repositories`}  target={"_blank"}>Github</a>
+              <a href={'https://www.dropbox.com/s/xr6kiy518oho4jh/Resume.pdf?dl=0'} target={"_blank"}>Resume</a>
+              <a href={'https://www.linkedin.com/in/emily-r-b6b859174/'} target={"_blank"}>LinkedIn</a>
+              <a href="mailto:emilykradke@gmail.com">Email</a>
+            </li>
           </div>
         </div>
       </section>
