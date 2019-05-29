@@ -9,7 +9,7 @@ class Footer extends Component {
           <a href="mailto:emilykradke@gmail.com"> Emily Radke</a>
         </p>
         <p className="tools">This site was built with great tools like 
-          <span className="tool"> HTML, SCSS, </span> 
+          <span className="tool">  HTML, SCSS, </span> 
           and
           <span className="tool"> React.</span>
         </p>

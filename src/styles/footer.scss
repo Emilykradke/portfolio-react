@@ -9,6 +9,7 @@ footer {
   p {
     color: $beige;
     font-size: 18px;
+    text-align: center;
 
     a {
       margin-left: 5px;
@@ -17,6 +18,10 @@ footer {
       text-decoration: none;
       text-transform: uppercase;
     }
+  }
+
+  .tool {
+    color: $loud;
   }
 
   .copyright {

@@ -52,7 +52,7 @@
         
         @media all and (min-width: 768px) {
           flex-direction: row;
-          width: 300px;
+          width: 400px;
         }
 
         ul {
@@ -60,7 +60,8 @@
           margin-bottom: 16px;
 
           &:first-of-type {
-            margin-left: 30px;
+            // margin-left: 10px;
+            margin-right: 30px
           }
 
           li {
@@ -86,7 +87,7 @@
       }
 
       @media all and (min-width: 768px) {
-        flex-direction: column;
+        // display: none;
       }
 
       a {
@@ -96,7 +97,7 @@
         text-transform: uppercase;
         border-left: 1px solid black;
         padding-left: 30px;
-        color: $dark;
+        color: $loud;
         cursor: pointer;
         transition: color .5s;
 
@@ -105,7 +106,7 @@
         }
 
         &:hover {
-          color: $loud;
+          color: $dark;
         }
       }
     }
