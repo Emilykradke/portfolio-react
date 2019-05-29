@@ -75,19 +75,25 @@
   .contact-links {
     max-width: 1200px;
 
+    @media all and (min-width: 768px) {
+      margin-top: 35px;
+      
+      li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+
     li {
-      display: inline-block;
-      padding: 75px 0;
-      margin: 0 20px;
+      // display: inline-block;
+      // padding: px 0;
+      margin-bottom: 20px;
+      // margin: 0 20px;
 
       &.active {
         a {
           color: $loud;
         }
-      }
-
-      @media all and (min-width: 768px) {
-        // display: none;
       }
 
       a {
@@ -97,16 +103,23 @@
         text-transform: uppercase;
         border-left: 1px solid black;
         padding-left: 30px;
-        color: $loud;
+        color: $dark;
         cursor: pointer;
         transition: color .5s;
 
         &:first-of-type {
           border-left: 0px;
+          margin-left: 0;
         }
 
         &:hover {
-          color: $dark;
+          color: $loud;
+          
+        }
+
+        i {
+          margin-right: 12px;
+          color: $loud;
         }
       }
     }

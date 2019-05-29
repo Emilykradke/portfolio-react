@@ -27,7 +27,7 @@
 
     .project-block {
       display: flex;
-      // justify-content: space-around;
+      justify-content: space-around;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -36,6 +36,7 @@
       @media all and (min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
+        // margin-left: 50px;
       }
 
       .project-img-link {
@@ -47,7 +48,7 @@
         border-radius: 4px;
 
         @media all and (min-width: 768px) {
-          margin-right: 150px;
+          margin-right: 50px;
           margin-bottom: 0;
         }
 
@@ -76,12 +77,12 @@
         }
 
         .heading-m {
-          margin-bottom: 28px;
+          margin-bottom: 14px;
           color: $dark;
         }
 
         .paragraph {
-          margin-bottom: 16px;
+          margin-bottom: 32px;
         }
 
         .project-link {

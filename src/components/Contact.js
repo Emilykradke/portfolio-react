@@ -37,14 +37,32 @@ class Contact extends Component {
             </div>
           </div>
 
-          <div className="contact-links">
+          <ul className="contact-links">
             <li>
-              <a href={`https://github.com/Emilykradke?tab=repositories`}  target={"_blank"}>Github</a>
-              <a href={'https://www.dropbox.com/s/xr6kiy518oho4jh/Resume.pdf?dl=0'} target={"_blank"}>Resume</a>
-              <a href={'https://www.linkedin.com/in/emily-r-b6b859174/'} target={"_blank"}>LinkedIn</a>
-              <a href="mailto:emilykradke@gmail.com">Email</a>
+              <a href={`https://github.com/Emilykradke?tab=repositories`}  target={"_blank"}>
+                <i class="fab fa-github"></i>
+                Github
+              </a>
             </li>
-          </div>
+            <li>
+              <a href={'https://www.dropbox.com/s/xr6kiy518oho4jh/Resume.pdf?dl=0'} target={"_blank"}>
+                <i class="far fa-file-alt"></i>
+                Resume
+              </a>
+            </li>
+            <li>
+              <a href={'https://www.linkedin.com/in/emily-r-b6b859174/'} target={"_blank"}>
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="mailto:emilykradke@gmail.com">
+                <i class="far fa-envelope"></i>
+                Email
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     );
