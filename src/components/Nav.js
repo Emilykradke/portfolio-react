@@ -14,7 +14,7 @@ class Nav extends Component {
             <a href={`#about`}>About</a>
             <a href={`#portfolio`}>Portfolio</a>
             <a href={`#contact`}>Contact</a>
-            <a href={`https://www.dropbox.com/s/xr6kiy518oho4jh/Resume.pdf?dl=0`}  target={"_blank"}>Resume</a>
+            <a href={`https://www.dropbox.com/home?preview=Resume+(5).pdf`}  target={"_blank"}>Resume</a>
           </li>
         </Scrollspy>
 

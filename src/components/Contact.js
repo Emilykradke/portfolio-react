@@ -45,7 +45,7 @@ class Contact extends Component {
               </a>
             </li>
             <li>
-              <a href={'https://www.dropbox.com/s/xr6kiy518oho4jh/Resume.pdf?dl=0'} target={"_blank"}>
+              <a href={'https://www.dropbox.com/home?preview=Resume+(5).pdf'} target={"_blank"}>
                 <i class="far fa-file-alt"></i>
                 Resume
               </a>

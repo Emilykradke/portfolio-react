@@ -8,11 +8,6 @@ class Footer extends Component {
           © 2019 
           <a href="mailto:emilykradke@gmail.com"> Emily Radke</a>
         </p>
-        <p className="tools">This site was built with great tools like 
-          <span className="tool">  HTML, SCSS, </span> 
-          and
-          <span className="tool"> React.</span>
-        </p>
       </footer>
     );
   }
