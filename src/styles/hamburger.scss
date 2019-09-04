@@ -16,6 +16,11 @@
   box-sizing: border-box;
   cursor: pointer;
   
+    &:focus {
+        outline: none;
+    }
+
+  
   .burgerTitle {
     margin-right: 5px;
     font-size: 24px;
