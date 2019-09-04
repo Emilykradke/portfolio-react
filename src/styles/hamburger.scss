@@ -1,80 +1,45 @@
-button {
-  // position: fixed;
-  // top: 20px;
-  /* left: 20px; */
-  // right: 20px;
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
+.burgerButton {
+  font-family: $beige;
+  text-transform: uppercase;
+  color: $beige;
+  letter-spacing: 1.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 75px;
+  width: 115px;
+  margin: auto;
+  background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  pointer-events: auto;
-  transition: all .75s ease-out;
-  opacity: 1;
+  padding: 0 80px 0 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  
+  .burgerTitle {
+    margin-right: 5px;
+    font-size: 24px;
+  }
 
+  .menu-lines {
+    padding-left: 7px;
+    margin-bottom: 20px;
+
+    .buttonLine {
+      width: 35px;
+      margin-top: 6px;
+      height: 2px;
+      background: $beige;
+      border-radius: 50px;
+    }
+  } 
+  
   @media all and (min-width: 768px) {
     display: none;
+    width: 0px;
   }
+}
 
-  &:hover {
-    .hamburger {
-      .line,
-      .line::after,
-      .line::before {
-        background-color: $loud;
-      }
-    }
-  }
-
-  &.fadeOut {
-    transform: translateX(-10px) scale(1.2);
-    opacity: 0;
-  }
-
-  .hamburger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-    &.clicked {
-      transform: rotate(135deg);
-
-      .line::before,
-      .line::after {
-        top: 0;
-        transform: rotate(90deg);
-      }
-    }
-
-    .line {
-      position: relative;
-      height: 2px;
-      background-color: $beige;
-      width: 100%;
-
-      /* Top and bottom hamburger lines*/
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        z-index: 1;
-        top: -10px;
-        width: inherit;
-        left: 0;
-        height: 2px;
-        background: inherit;
-      }
-
-      /* Move top line down*/
-      &::after {
-        top: 10px;
-      }
-    }
-  }
+.burgerButton:focus {
+    background: none;
 }

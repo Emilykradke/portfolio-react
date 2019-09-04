@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-import Nav from './Nav';
+import Nav from './Nav/Nav';
+import HamburgerMenu from './Nav/HamburgerMenu';
+import Backdrop from './Nav/Backdrop';
 import Home from './Home';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
@@ -8,32 +10,38 @@ import Footer from './Footer';
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-
-    this.state = {
-      menuOpen: false
-    }
+  
+  state = {
+    burgerMenuOpen: false
   }
 
-  toggleMenu = () => {
-    this.setState({ menuOpen: !this.state.menuOpen });
+  burgerToggleClickHandler = () => {
+    this.setState((prevState) =>{
+      return {burgerMenuOpen: !prevState.burgerMenuOpen}
+    })
   }
 
-  handleLinkClick() {
-    this.setState({menuOpen: false})
+  backdropClickHandler = () => {
+    this.setState({burgerMenuOpen: false})
   }
 
   render() {
-    // const { menuOpen } = this.state;
+
+    let burgerMenu;
+    let backdrop;
+
+    if (this.state.burgerMenuOpen) {
+      burgerMenu = <HamburgerMenu click={this.backdropClickHandler} />
+      backdrop = <Backdrop click={this.backdropClickHandler} />
+    }
 
     return (
       <div className="wrapper">
         
         <Nav 
-          toggleMenu={this.toggleMenu}
-        />
+          burgerClickHandler={this.burgerToggleClickHandler}/>
+        {burgerMenu}
+        {backdrop}
         <Home />
         <Portfolio />
         <Contact />

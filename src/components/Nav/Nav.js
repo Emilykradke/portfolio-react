@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
-
 import Hamburger from './Hamburger';
 
 class Nav extends Component {
@@ -18,10 +17,11 @@ class Nav extends Component {
           </li>
         </Scrollspy>
 
-        <Hamburger 
-          menuOpen={this.props.menuOpen}
-          toggleMenu={this.props.toggleMenu}
-        />
+        <div className='hamburger-button'>
+          <Hamburger
+          click={this.props.burgerClickHandler}
+          ></Hamburger>
+        </div>
       </nav>
     );
   }

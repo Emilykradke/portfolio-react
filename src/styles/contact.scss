@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  // height: 100vh;
+  // height: 95vh;
   
   @media all and (max-width: 768px) {
     padding: 100px 60px;  
@@ -21,7 +21,7 @@
   }
 
   .heading-l {
-    margin-bottom: 48px;
+    margin-bottom: 100px;
   }
 
   .contact-inner {
@@ -29,8 +29,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    margin-bottom: 20px;
+    
     @media all and (min-width: 768px) {
+      margin-bottom: 75px;
       flex-direction: row;
     }
     
@@ -42,7 +44,7 @@
       padding: 40px;
 
       .paragraph {
-        margin-bottom: 16px;
+        margin-bottom: 30px;
       }
       
       .skills-block {
@@ -57,7 +59,7 @@
 
         ul {
           list-style-type: disc;
-          margin-bottom: 16px;
+          margin-bottom: 30px;
 
           &:first-of-type {
             // margin-left: 10px;

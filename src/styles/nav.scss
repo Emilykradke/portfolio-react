@@ -5,6 +5,8 @@ nav {
   padding: 0 30px;
   background-color: $dark;
   z-index: 3;
+  position: fixed;
+  width: 100%;
 
   @media all and (min-width: 768px) {
     position: fixed;
@@ -22,6 +24,10 @@ nav {
     @media all and (min-width: 768px) {
       display: block;
       margin: 0 auto;
+    }
+
+    @media all and (max-width: 768px) {
+      display: none;
     }
 
     li {

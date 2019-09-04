@@ -1,0 +1,39 @@
+.hamburger-nav {
+  
+  .nav-list {
+    margin-top: 58px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: $dark;
+    z-index: 200;
+    border: 1px solid $beige;
+
+    @media all and (max-width: 411px) {
+      width: 100%;
+    }
+
+    @media all and (max-width: 320px) {
+      width: 320px;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      padding: 10px 0;
+
+      a {
+        margin: auto;
+        text-decoration: none;
+        color: $beige; 
+        padding: 20px 0;
+        transition: color .5s;
+
+        &:hover {
+          color: $loud;
+        }
+      }
+    }
+  }
+}
